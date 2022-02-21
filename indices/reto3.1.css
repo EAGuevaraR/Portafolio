@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(223, 19%, 93%);
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  display: flex;
+  justify-items: center;
+}
+.rows{
+  max-width: 740px;
+  margin: auto;
+  margin-top: 50px;  
+}
+.card1{
+  border-radius: 8px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.card-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.name{
+  width: 40vh;
+  display: flex;
+  align-items: center;
+}
+.name span{
+  padding-inline: 15px;
+}
+.span-name{
+  color: gray;
+}
+.span-reply{
+  color: hsl(238, 40%, 52%);
+  font-weight: 600;
+  padding-right: 20px;
+}
+.btn1{
+  background-color: hsl(228, 33%, 97%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 13vh;
+  min-width: 5vh;
+}
+.btn1 img {
+  width: 12px;
+}
+.btn1 p {
+  color: hsl(238, 40%, 52%);
+  font-weight: bold;
+}
+.comment {
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  line-height: 22px;
+  width: 95.5%;
+  font-size: 16px;
+  color: gray;
+}
+.row-linea{
+  display: flex;
+}
+.hr{
+  border: 2px;
+  width: 2px;
+  height: 94%;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #ccc;
+}
+
+.highlight {
+  color:hsl(238, 40%, 52%);
+}
+.name button {
+  background-color: hsl(238, 40%, 52%);
+  font-weight: 500;
+  font-family: 'Rubik';
+  color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+}
+.span-delete{
+  color: red;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.card_comment {
+  padding: 5px;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.flexgrow{
+  flex-grow: 2;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.flexgrow textarea{
+  
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border: 2px solid #ccc;
+  resize: none;
+  font-weight: 500;
+  font-family: 'Rubik';
+}
+.btnSend{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Rubik';
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  background-color: hsl(238, 40%, 52%);
+  border-radius: 8px; 
+}
+.pointer{
+  cursor: pointer;
+}

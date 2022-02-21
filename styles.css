@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Acme', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: hsl(224, 61%, 19%);
+  
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul > li {
+  padding: 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: hsl(193, 62%, 56%);
+  font-weight: 600;
+}
+
+.banner {
+  background-image: url("/portafolio/frontend.jpg");
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.resume {
+  width: 70%;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: hsl(193, 62%, 56%);
+}
+
+.btn-primary {
+  background-color: hsl(17, 88%, 57%);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-profile {
+  width: 243px;
+  height: 243px;
+  border-radius: 25%;
+  border: solid grey 2px;
+}
+
+.sectionworks-container{
+  border: solid;
+  background-color: hsl(224, 61%, 19%);
+}
+.section-works {
+  
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+}
+
+.card div img {
+  width: 246px;
+  height: 180px;
+  object-fit:cover ;
+  border-radius: 8px;
+}
+
+.text-works {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: white;
+  text-decoration:underline ;
+}
+
+.container-detail {
+  margin-left: 20px;
+}
+
+.container-detail p {
+  margin-top: 20px;
+  width: 100% !important;
+}
+
+.label-dark {
+  background-color: #142850;
+  color: #fff;
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.text-light {
+  color: #8695a4;
+}
+
+hr {
+  height: 0.5px;
+  background-color: hsl(17, 88%, 57%);
+  border: 0.5px solid hsl(17, 88%, 57%);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.link-portafolio {
+  color: hsl(193, 62%, 56%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-portafolio:hover {
+  color: white;
+  text-decoration: underline;
+}
+.btn-flotante {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-weight: bold;
+}

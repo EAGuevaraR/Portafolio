@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docs para JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./docs7.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="grid-container">
+    <!-- menu -->
+    <div class="item1">
+      <div class="container-tema">
+        <h4>Variables</h4>
+        <ul>
+          <li><a href="#var">var</a></li>
+          <li><a href="#let">let</a></li>
+          <li><a href="#const"></a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Condicionales</h4>
+        <ul>
+          <li><a href="#if">if</a></li>
+          <li><a href="#else">else if</a></li>
+          <li><a href="#operadores">operadores</a></li>
+          <li><a href="#operador ternario">operador ternario</a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Arreglos</h4>
+        <ul>
+          <li><a href="#arreglos">Como declarar</a></li>
+          <li><a href="#arreglo-acceso">Como ingresar</a></li>
+          <li><a href="#push">Push</a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Funciones</h4>
+        <ul>
+          <li><a href="#function">Function</a></li>
+          <li><a href="#function-anonima">Function anonimas</a></li>
+          <li><a href="#arrow-function">Arrow Function</a></li>
+          <li><a href="#arrow-function-inline">Arrow Function inline</a></li>
+          <li><a href="#function-function">Function in Function</a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Objetos</h4>
+        <ul>
+          <li><a href="#objeto">Objetos</a></li>
+          <li><a href="#new-object">New object</a></li>
+          <li><a href="#leer-object">Leer objetos</a></li>
+          <li><a href="#insert-objeto">Agregar elementos</a></li>
+          <li><a href="#array-objetos">Array de objetos</a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Funciones extra</h4>
+        <ul>
+          <li><a href="#to-string">toString<span class="parent">(</span><span class="parent">)</span></a></li>
+          <li><a href="#includes">includes<span class="parent">(</span><span class="parent">)</span><a></li>
+          <li><a href="#split">split<span class="parent">(</span><span class="parent">)</span></a></li>
+          <li><a href="#parse-int">+</a></li>
+          <li><a href="#uppercase">toUpperCase<span class="parent">(</span><span class="parent">)</span></a></li>
+          <li><a href="#math">Math<span class="parent">(</span><span class="parent">)</span></a></li>
+          <li><a href="#typeof">Typeof<span class="parent">(</span><span class="parent">)</span></a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Repaso</h4>
+        <ul>
+          <li><a href="">Objetos con funciones</a></li>
+          <li><a href="">Objetos 2<a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>Bucles</h4>
+        <ul>
+          <li><a href="#for">For</a></li>
+          <li><a href="#while">While<a></li>
+          <li><a href="#map">Map<a></li>
+          <li><a href="#for-each">Foreach<a></li>
+          <li><a href="#filter">Filter<a></li>
+          <li><a href="#find">Find<a></li>
+          <li><a href="#find-index">findindex<a></li>
+        </ul>
+      </div>
+      <div class="container-tema">
+        <h4>JS entre archivos</h4>
+        <ul>
+          <li><a href="#script">JS entre archivos</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="item2">
+      <div class="logo-container">
+        <a
+            class="btn-github"
+            target="_blank"
+            href="https://github.com/EAGuevaraR"
+          >
+            <svg
+              height="32"
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="32"
+              data-view-component="true"
+              class="octicon octicon-mark-github v-align-middle"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              ></path>
+            </svg>
+          </a>
+          &nbsp; &nbsp; &nbsp;
+          <img
+            width="180"
+            src="https://codigo.edu.pe/public/img/codigo-logo.png"
+            alt=""
+          />
+      </div>
+    </div>
+    <!-- content -->
+    <div class="item3">
+      <!-- variables -->
+      <div id=variables" class="document-container">
+        <div id="var">
+          <h2>Var</h2>
+          <p>
+            Es una forma de declrar varibales en JS, recordemos que al ser global no es recomendado.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>var nombre = "Juan";</p>
+            <p>var edad = 23;</p>   
+            <p>var apellido = "Pérez";</p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Recordemos que podemos cambiar el valor de la variable sin importar si ésta previamente tenía otro tipo
+          </p>
+        </div>
+      </div>
+      <div id=variables" class="document-container">
+        <div id="let">
+          <h2>let</h2>
+          <p>
+            Es una forma de declrar varibales en JS, ahora es el reemplazo de var ya que funciona en un ámbito determinado y no es global.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>let nombre = "Juan";</p>
+            <p>let edad = 23;</p>   
+            <p>let apellido = "Pérez";</p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Recordemos que podemos cambiar el valor de la variable sin importar si ésta previamente tenía otro tipo
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="const">
+          <h2>const</h2>
+          <p>
+            Es una forma de declrar varibales en JS, pero estas son inmutables, es decir, el valor asignado no puede ser cambiado.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> nombre = "Juan";</p>
+            <p><span class="variable">const</span> edad = 23;</p>   
+            <p><span class="variable">const</span> apellido = "Pérez";</p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Recordemos que podemos cambiar el valor de la variable sin importar si ésta previamente tenía otro tipo
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="if">
+          <h2>if</h2>
+          <p>
+            Es una forma de declrar condiciones en JS, y si se cumple la condición se puede ejecutar algo.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> edad = 18;</p>
+            <p>if <span class="parent">(</span>edad >= 18<span class="parent">)</span> <span class="llave">{</span>;</p>   
+            <p>&nbsp;&nbsp;&nbsp; <span class="console">console.log</span> <span class="parent">(</span>"Es mayor de edad"<span class="parent">)</span>;</p>
+            <p><span class="llave">}</span></p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Recordemos que podemos cambiar el valor de la variable sin importar si ésta previamente tenía otro tipo
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="Else">
+          <h2>Else</h2>
+          <p>
+            Es una forma de declrar condiciones en JS, en caso la condición del if no se cumpla, automáticamente se ejecuta lo que esta dentro del else.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> edad = 18;</p>
+            <p>if <span class="parent">(</span>edad >= 18<span class="parent">)</span> <span class="llave">{</span>;</p>   
+            <p>&nbsp;&nbsp;&nbsp; <span class="console">console.log</span> <span class="parent">(</span>"Es mayor de edad"<span class="parent">)</span>;</p>
+            <p><span class="llave">}</span> else <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp; <span class="console">console.log</span> <span class="parent">(</span>"Es menor de edad"<span class="parent">)</span>;</p>
+            <p><span class="llave">}</span></p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Evitemos el uso del else, sólo cuando es necesario.
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="operadores">
+         <h2>operadores</h2>
+         <p>Vamos a revisare los distintos operadores que podemos usar en los if y else if</p>
+         <p>Ejemplo</p>
+          <div class="code-container">
+            <p>&& : significa Y</p>
+            <p>|| : significa o</p>
+            <p>! : significa negación</p>
+            <p>=== : para comparar si dos valores son iguales</p>
+            <p>> >= < <= : para comparaciones entre 2 valores</p>
+            <p>!== : para saber si 2 valores son distintos</p>
+          </div>
+        </div>  
+      </div>
+      <div class="document-container">
+        <div id="operador ternario">
+          <h2>operador ternario</h2>
+          <p>Un operador ternario es un if de una linea, ojo sólo podemos ejecutar una linea de codigo dentro de la condición del operador ternario.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> nombre = "Juan"; </p>
+            <p>nombre === "Juan" ? <span class="console">console.log</span><span class="parent">(</span>"Lo encontramos"<span class="parent">)</span> : <span class="parent">(</span>"No lo encontramos :<span class="parent">(</span>"<span class="parent">)</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="arreglos">
+          <h2>Arreglos</h2> 
+          <p>
+            Un arreglo es una colección de daots, recuerden que los arreglos pueden contener cualquier tipo de datos.
+          </p>
+          <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Object</li>
+            <li>function</li>
+          </ul>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> arreglo = <span class="corchete">[</span>`Pepe`,2,true, 90.4,5<span class="corchete">]</span> </p>
+            <p><span class="console">console.log</span><span class="parent">(</span>arreglo<span class="parent">)</span>;</p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Los arreglos se empiezan a contar desde el índice 0, es decir que el primer elemento tiene como indice 0.
+          </p>
+          <h4>lenght</h4>
+          <p>
+            Es la función la cual nos permite saber la cantida de objetos en un arreglo.
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="arreglo-acceso">
+          <h2>Accediendo a un arreglo</h2> 
+          <p>
+            Para acceder a un arreglo podemos usar el índice del elemento que queremos acceder.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> arreglo = <span class="corchete">[</span>`Pepe`,2,true, 90.4,5<span class="corchete">]</span> </p>
+            <p>-Accedemos al primer elemento-</p>
+            <p><span class="console">console.log</span><span class="parent">(</span>arreglo<span class="corchete">[</span>0<span class="corchete">]</span><span class="parent">)</span></p>
+            <p>-Accedemos al segundo elemento-</p>
+            <p><span class="console">console.log</span><span class="parent">(</span>arreglo<span class="corchete">[</span>1<span class="corchete">]</span><span class="parent">)</span></p>
+          </div>
+        </div>  
+      </div>
+      <div class="document-container">
+        <div id="push">
+          <h2>Push</h2> 
+          <p>
+            Es la función que nos pernmite agregar un objeto al final del arreglo.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> arreglo = <span class="corchete">[</span>`Pepe`,2,true, 90.4,5<span class="corchete">]</span> </p>
+            <p>arreglo.push<span class="parent">(</span>true<span class="parent">)</span>;</p>    
+            <p>arreglo.push<span class="parent">(</span><span class="llave">{</span>nombre: "juana", edad: 18<span class="llave">}</span><span class="parent">)</span></p>
+            <p><span class="console">console.log</span><span class="parent">(</span>arreglo<span class="parent">)</span>;</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="function">
+          <h2>Function</h2> 
+          <p>
+            Una función es una agrupación de codigo que se puede ejecutar varias veces, es decir m una funcin puede recibir paramtros y retornar valores. Es para retuilizar codigo.
+          </p>
+          <p>
+            <span class="important">Importante: </span>
+            Si vemos que una accion se repite mas de una vez lo convertimos a
+            una function
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>function saludar(nombre) <span class="llave">{</span></p>
+            <p>
+              &nbsp;&nbsp;&nbsp;<span class="console">console.log</span>(`Hola
+              $<span class="llave">{</span>nombre<span class="llave">}</span
+              >`);
+            </p>
+            <p><span class="llave">}</span></p>
+            <p>
+              // Es la forma es la que llamos a la funcion y le pasamos como
+              parametro el nombre Juan
+            </p>
+            <p>saludar("Juan");</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="function-anonima">
+          <h2>Function Anonima</h2>
+          <p>
+            Una function anonima basicamente no tiene nombre, esta se suele
+            guardar en una variable
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>
+              <span class="variable">const</span> saludar = function(nombre)
+              <span class="llave">{</span>
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;<span class="console">console.log</span>(`Hola
+              $<span class="llave">{</span>nombre<span class="llave">}</span
+              >`);
+            </p>
+            <p><span class="llave">}</span></p>
+            <p>saludar("Juan");</p>
+          </div>
+          <p>Ejemplo 2</p>
+          <div class="code-container">
+            <p>
+              <span class="variable">const</span> saludar = (nombre)
+              <span class="equal">=></span>
+              <span class="llave">{</span>
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;<span class="console">console.log</span>(`Hola
+              $<span class="llave">{</span>nombre<span class="llave">}</span
+              >`);
+            </p>
+            <p><span class="llave">}</span></p>
+            <p>saludar("Juan");</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="arrow-function">
+          <h2>Arrow Function</h2>
+          <p>
+            Un arrow function es una funcion de tipo la flecha la cual cumple
+            con casi todo lo que hacer un function normal, sin embargo la
+            diferencia entre una arrow funtion y una function normal es que en
+            un arrow function el <b>this</b> no existe.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>
+              <span class="variable">const</span> saludar = (nombre)
+              <span class="equal">=></span>
+              <span class="llave">{</span>
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;<span class="console">console.log</span>(`Hola
+              $<span class="llave">{</span>nombre<span class="llave">}</span
+              >`);
+            </p>
+            <p><span class="llave">}</span></p>
+            <p>saludar("Juan");</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="arrow-function-inline">
+          <h2>Arrow Function Inline</h2>
+          <p>
+            basicamente es un arrow que solo ejecuta un linea de codigo, ojo
+            el return no hace falta porque esta implicito
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>
+              <span class="variable">const</span> saludar = nombre
+              <span class="equal">=></span>
+              <span class="console">console.log</span>(`Hola $<span
+                class="llave"
+                >{</span
+              >nombre<span class="llave">}</span>`);
+            </p>
+            <p>saludar("Juan");</p>
+          </div>
+          <p>
+            <span class="important">Importante: </span>
+            Si tenemos solo un parametro en la funcion no hace falta poner los
+            parentesis
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="function-function">
+          <h2>Function in function</h2>
+          <p>
+            El concepto de invocar una función dentor de otra es algo ormal y muy usado, se pueden usar n funciones dentro de una función, de hecho es lo ideal tratar de usar funciones para poder hacer que nuestro código esté distribuido.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> calcularMayorDeEdad =(edad) => <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp;<span class="variable">const</span> esMayor = esMayor (edad);</p>
+            <p>&nbsp;&nbsp;&nbsp;return esMayor </p>
+            <p><span class="llave">}</span></p>
+            <p>//función es mayor</p>
+            <p><span class="variable">const</span> esMayor (edad) => edad >= 18 ? true : false </p>
+          </div>
+        </div>
+      </div> 
+      <div class="document-container">
+        <div id="objeto">
+          <h2>Objetos</h2>
+          <p>
+            Los objetos son una especie de variable, la cual está compuesta por un key y un value, básicamente podemos decir que un objeto es una entidad, porque tiene propiedades.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> persona => <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp; nombre: "Juancito",</p>
+            <p>&nbsp;&nbsp;&nbsp; apellido: "Pérez",</p>
+            <p>&nbsp;&nbsp;&nbsp; edad: 34,</p>
+            <p>&nbsp;&nbsp;&nbsp; domicilio: "Av. Siempreviva 123",</p>
+            <p><span class="llave">}</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="new-object">
+          <h2>New Objetos</h2>
+          <p>
+            Es una clase de JS que nos permite crear un objeto a partir de esta clase. Es un poco antguo y actualmente no es recomendado usarlo.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> laptop = new Object ();</p>
+            <p>laptop.memoria = "512bg";</p>
+            <p>laptop.ram = 16;</p>
+            <p>laptop.marca = "DELL";</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="leer-object">
+          <h2>Leer Objetos</h2>
+          <p>
+            La forma de acceder a la propiedad de un objeto es por el <span class="variable">.</span> ojo si tienen un objeto dentro de otro objeto se puede usar el <span class="variable">.</span> para navegar entre el objeto.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> persona => <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp; nombre: "Juancito",</p>
+            <p>&nbsp;&nbsp;&nbsp; apellido: "Pérez",</p>
+            <p>&nbsp;&nbsp;&nbsp; 123: 34,</p>
+            <p>&nbsp;&nbsp;&nbsp; domicilio: "Av. Siempreviva 123",</p>
+            <p><span class="llave">}</span></p>
+            <p>// Imprimiendo la propiedad nombre</p>
+            <p><span class="console">console.log</span>(pesona.nombre);</p>
+            <p><span class="console">console.log</span>(pesona["123"]);</p>
+          </div>
+        </div>            
+      </div>
+      <div class="document-container">
+        <div id="insert-objeto">
+          <h2>Como agregar una propiedad a un objeto</h2>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> persona => <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp; nombre: "Juancito",</p>
+            <p>&nbsp;&nbsp;&nbsp; apellido: "Pérez",</p>
+            <p>&nbsp;&nbsp;&nbsp; 123: 34,</p>
+            <p>&nbsp;&nbsp;&nbsp; domicilio: "Av. Siempreviva 123",</p>
+            <p><span class="llave">}</span></p>
+            <p>// Agregando país y ciudad</p>
+            <p>persona.pais = "Peru";</p>
+            <p>persona.ciudad = "Lima";</p>
+          </div>
+        </div>
+      </div> 
+      <div class="document-container">
+        <div id="array-objetos">
+          <h2>Array de Objetos</h2>
+          <p>
+            Un array de objetos es un array que está compuesto como padre y dentro de él tenemos "n" cantidad de objetos, no existe un límite determinado.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> productos = 
+            <span class="llave">[</span></p>
+            <p><span class="llave">{</span></p>
+              <p>&nbsp;&nbsp;&nbsp; nombre: "Juancito",</p>
+              <p>&nbsp;&nbsp;&nbsp; apellido: "Pérez",</p>
+              <p>&nbsp;&nbsp;&nbsp; 123: 34,</p>
+              <p>&nbsp;&nbsp;&nbsp; domicilio: "Av. Siempreviva 123",</p>
+            <p><span class="llave">},</span></p>
+            <p><span class="llave">{</span></p>
+              <p>&nbsp;&nbsp;&nbsp; nombre: "Juancito",</p>
+              <p>&nbsp;&nbsp;&nbsp; apellido: "Pérez",</p>
+              <p>&nbsp;&nbsp;&nbsp; 123: 34,</p>
+              <p>&nbsp;&nbsp;&nbsp; domicilio: "Av. Siempreviva 123",</p>
+            <p><span class="llave">},</span></p>
+            <p><span class="llave">]</span></p>
+          </div>
+        </div>    
+      </div>
+      <div class="document-container">
+        <div id="to-string">
+          <h2>toString()</h2>
+          <p>
+            Se encarga de convertir una variable de cualquier tipo al tipo string.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span>numero = 10;</p>
+            <p>numero.toString <span class="parent">(</span><span class="parent">)</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="includes">
+          <h2>includes<span class="parent">(</span><span class="parent">)</span></h2>
+          <p>
+            Sirve para poder ver si existe un elemento en un array.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span>mascotas = <span class="parent">[</span>"perro", "gato", "conejo"<span class="parent">]</span></p>
+            <p>mascotas.includes<span class="parent">(</span>"gato"<span class="parent">)</span></p>
+          </div>
+          <p>
+            <span class="important">Importante</span>
+            Recordemos que el <span class="variable">includes</span> retorna true or false, es decir un boolean.
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="split">
+          <h2>Split<span class="parent">(</span><span class="parent">)</span></h2>
+          <p>
+            Sirve para convertir una variable a un array, split recibe como parametro un simbolo, letra, etc y va a realizar la separación de elementos.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>"Hola-mundo-soy-un-programador".split<span class="parent">(</span>"-"<span class="parent">)</span></p>
+            //
+            <p><span class="parent">[</span>"Hola", "mundo", "soy","un","programador"<span class="parent">]</span></p>
+          </div>
+        </div>
+      </div>   
+      <div class="document-container">
+        <div id="parse-int">
+          <h2>+</h2>
+          <p>
+            El símbolo<span class="variable">+</span> viene a ser el reemplazo de parseInt() y sirve para transformar una variable a otra de tipo number.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> edad = "18";</p>
+            <p><span class="console">console.log</span><span class="parent">(</span>+edad<span class="parent">)</span></p>            
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="uppercase">
+          <h2>toUpperCase</h2>
+          <p>
+            Srive para transformar un string a otro string pero con todas las letras en mayúsculas.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">let</span> nombre = "Pepe Pérez";</p>
+            <p><span class="console">console.log</span><span class="parent">(</span>nombre.toUpperCase<span class="parent">(</span><span class="parent">)</span><span class="parent">)</span></p>
+            <p>// PEPE PEREZ</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="math">
+          <h2>Math</h2>
+          <p>
+            Es una librería de Js que me permite realizar operaciones matemáticas como:
+          </p>
+          <ul>
+            <li>Raíz cuadrada</li>
+            <li>Elevar a la potencia</li>
+            <li>Redondear números</li>
+            <li>Obtener números random</li>
+            <li>Calcular logaritmos</li>
+          </ul>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">Math.pow</span> <span class="parent">(</span>2,2<span class="parent">)</span>;</p>
+            <p>Significa 2 elevado al cuadrado.</p>
+          </div>
+        </div>
+      </div>  
+      <div class="document-container">
+        <div id="typeof">
+          <h2>Typeof</h2>
+          <p>
+            Muestra el tipo de datos de una variable
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> computador = "Macbook Pro M1"</p>
+            <p><span class="console">console.log</span> <span class="parent">(</span>typeof computador<span class="parent">)</span></p>
+            // Nos dice que es un string
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="for">
+          <h2>For</h2>
+          <p>
+            El bucle es una estructura repetitiva, es decir hacer algo mcuhas veces y además los bucles son usador para leer arrayts, porque un bucle nos va a permitir leer cada elemento de forma independiente.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">for</span> <span class="parent">(</span>let i = 0; i < 10; i++<span class="parent">)</span> <span class="llave">{</span></p>
+            <p>&nbsp;&nbsp;&nbsp;<span class="console">console.log</span><span class="parent">(</span>i<span class="parent">)</span></p>
+            <p><span class="llave">}</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="while">
+          <h2>While</h2>
+          <p>
+            Es otro tipo de bucle que sirve para iterar arrays pero esta atado a una condición o contador.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">let</span> contador = 0;<span class="llave">{</span></p>
+            <p>while <span class="parent">(</span>contador < 10<span class="parent">)</span> </p>
+            <p>&nbsp;&nbsp;&nbsp; <span class="console">console.log</span><span class="parent">(</span>contador<span class="parent">)</span>;</p>
+            <p>&nbsp;&nbsp;&nbsp; contador++;</p>
+            <p><span class="llave">}</span></p>
+          </div>
+          <p>
+            <span class="important">Importante</span> No se olviden de aumentar el contador porque si no, nuestras computadoras van a explotar.
+          </p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="map">
+          <h2>Map</h2>
+          <p>
+            Es un bucle que permite iterar array pero con la peculiaridad de que este retorna un array.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> alumnos = <span class="parent">[</span>"pepe", "sutano","mengano"<span class="parent">]</span><span class="llave">{</span></p>
+            <p>alumnos.map<span class="parent">(</span><span class="parent">(</span>alumno,index<span class="parent">)</span> => <span class="console">console.log</span><span class="parent">(</span>index, alumno<span class="parent">)</span><span class="parent">)</span></p>
+          </div>
+          <p>
+            <span class="important">Recomendación</span> 
+            Cuando hagamos un maop y este nos solicite el parametro de elemento pdos usar el singular del arreglo.
+          </p>
+          <p>alumnos => alumno</p>
+          <p>mascotas => mascota</p>
+          <p>computadoras => computadoras</p>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="for-each">
+          <h2>For Each</h2>
+          <p>
+            Sirve para iterar datos, sin embargo, a diferencia del map, este no retorna nada. Es decir, si yo guardo en una variable al foreach el resultado será undefined.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> alumnos = <span class="parent">[</span>"pepe", "sutano","mengano"<span class="parent">]</span><span class="llave">{</span></p>
+            <p>
+              alumnos.foreach<span class="parent">(</span><span class="parent">(</span>alumno,index<span class="parent">)</span> => <span class="console">console.log</span><span class="parent">(</span>index, alumno<span class="parent">)</span><span class="parent">)</span>
+            </p>
+          </div>
+        </div>
+      </div>  
+      <div class="document-container">
+        <div id="filter">
+          <h2>Filter</h2>
+          <p>
+            Es el hermano de map, porque filter es usado para poder filtrar en base a una condición y este retorna un array.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> alumnos = <span class="parent">[</span>"pepe", "sutano","mengano"<span class="parent">]</span><span class="llave">{</span></p>
+            <p>
+              <span class="variable">const</span> alumnoFilter = alumnos.filter<span class="parent">(</span><span class="parent">(</span>alumno,index<span class="parent">)</span> => alumno === "Pepe"<span class="parent">)</span><span class="parent">)</span>
+            </p>
+            <p>//Va a retornar <span class="parent">[</span>"Pepe"<span class="parent">]</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="find">
+          <h2>Find</h2>
+          <p>
+            Es un iterador de bucles pero sólo retorna un resultado, y este resultado será el primero que encuentre, sin importar que halla más iguales en el array u objeto. Es decir, si en una lista tengo dos o más resultados, sólo va a tomar al primero y ese será el que devuelva.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> alumnos = <span class="parent">[</span>"pepe", "sutano","mengano"<span class="parent">]</span><span class="llave">{</span></p>
+            <p>
+              <span class="variable">const</span> alumnoFind = alumnos.find<span class="parent">(</span><span class="parent">(</span>alumno,index<span class="parent">)</span> => alumno === "Pepe"<span class="parent">)</span><span class="parent">)</span>
+            </p>
+            <p>//Va a retornar con Pepe pero como string, porque sólo será un dato.</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="find-index">
+          <h2>FindIndex</h2>
+          <p>
+            Sirve para poder encontrar la posición de un elemento en un array. Es decir retorna el índice el elemento encontrado.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p><span class="variable">const</span> alumnos = <span class="parent">[</span>"pepe", "sutano","mengano"<span class="parent">]</span><span class="llave">{</span></p>
+            <p>
+              <span class="variable">const</span> alumnoFindIndex = alumnos.findIndex<span class="parent">(</span><span class="parent">(</span>alumno,index<span class="parent">)</span> => alumno === "Pepe"<span class="parent">)</span><span class="parent">)</span>
+            </p>
+            <p>//Va a retornar 0 porque es el índice que tiene Pepe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div id="script">
+          <h2>Script</h2>
+          <p>
+            Lo usamos para popder vincvular nuestro Js al html, debemos saber que podemos acumular varios scripts y poder usar cada uno para guardar distintas funciones y variables, lo cual nos va a servir para tener un código ordenado.
+            Recuedern que podemos compartir variables y funciones siempre y cuando estos estén en el HTML.
+          </p>
+          <p>Ejemplo</p>
+          <div class="code-container">
+            <p>script src="./archivo.js</p>
+            <p>script src="./archivo2.js</p>
+          </div>
+          <p>
+            Si esta en ese orden uno puede usar las variables de archivo en archivo 2 sin problemas. Recuerden que para el navegador todo es un solo archivo.
+          </p>
+          <p>//Va a retornar 0 porque es el índice que tiene Pepe.</p>
+        </div>
+      </div>
+      <!-- nuestro boton flotante -->
+      <div>
+        <a href="#var" class="btn-flotante">&#8593</a>  
+      </div>
+    </div>
+  </section>
+</body>
+</html>

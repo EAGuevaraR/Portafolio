@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  font-family: 'Barlow', sans-serif;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav div{
+  padding: 30px;
+  padding-left: 45px;
+}
+.header{
+  background-image: url("/indices/img_reto6/images/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: #40bfff !important;
+  background-position: bottom;
+  height: 70vh;
+}
+.menu-nav{
+  display: flex;
+  list-style: none;
+}
+.menu-nav li{
+  padding-right: 30px;
+}
+.menu-nav li a{
+  text-decoration: none;
+  color: white;
+}
+.btn-contact{
+  background-color: white;
+  font-family: 'Fraunces', serif;
+  color: black !important;
+  padding: 10px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+}
+.titulo{
+  text-align: center;
+  color: white;
+}
+.titulo h1{
+  font-family: 'Fraunces', serif;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 75vh 75vh 75vh 90vh 50vh;
+  grid-template-areas: 
+    "transform transform transform-image transform-image"
+    "standout-image standout-image standout standout"
+    "cherry cherry oranges oranges"
+    "testimonials testimonials testimonials testimonials"
+    "milk orange-plate ice build";
+}
+.grid-container div{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item1{
+  grid-area: transform;
+}
+.item2{
+  background-image: url("/indices/img_reto6/images/image-transform.jpg");
+  grid-area: transform-image;
+;
+}
+.item3{
+  background-image: url("/indices/img_reto6/images/image-stand-out.jpg");
+  grid-area: standout-image;
+
+}
+.item4{
+  grid-area: standout;
+}
+.item-text{
+  width: 60%;
+  margin: auto;
+  color: hsl(212, 27%, 19%);
+}
+.item-text *{
+  margin-bottom: 20px;
+}
+.item-text h1{
+  font-family: 'Fraunces', serif;
+  font-size: 2.5em;
+  font-weight: 900;  
+}
+.item-text p{
+  font-size: 18px;
+  color: hsl(232, 10%, 55%);
+  line-height: 1.6em;  
+}
+.item-text a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+}
+.learn-yellow{
+  border-bottom: solid 5px hsl(51,100%,49%);
+}
+.learn-red{
+  border-bottom: solid 5px hsl(7,99%,70%);
+}
+
+.item5{
+  background-image: url("/indices/img_reto6/images/image-graphic-design.jpg");
+  grid-area: cherry;
+}
+
+.item6{
+  background-image: url("/indices/img_reto6/images/image-photography.jpg");
+  grid-area: oranges;
+}
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+.text-container *{
+  margin-bottom: 30px;
+}
+.text-container h3{
+  font-family: 'Fraunces', serif;
+  font-size: 2em;
+  font-weight: 900;
+}
+.text-container p{
+  line-height: 1.6em; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.lettergreen{
+  color: #24544c;
+}
+.letterblue{
+  color: #19566d;
+}
+
+.item7{
+  grid-area: testimonials;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item7 *{
+  margin-bottom: 10px;
+}
+.container-testimonials{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+.container-testimonials div{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.testimonials-titulo{
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: rgb(165, 164, 164);
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+.testimonial-img{
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.item p{
+  color: hsl(212, 27%, 19%);
+  margin-bottom: 60px;
+}
+.item h2{
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+}
+.item span{
+  color: rgb(165, 164, 164);
+}
+.item8{
+  grid-area: milk;
+  background-image: url("/indices/img_reto6/images/image-gallery-milkbottles.jpg");
+
+}
+.item9{
+  grid-area: orange-plate;
+  background-image: url("/indices/img_reto6/images/image-gallery-orange.jpg");
+
+}
+.item10{
+  grid-area: ice;
+  background-image: url("/indices/img_reto6/images/image-gallery-cone.jpg");
+
+}
+.item11{
+  grid-area: build;
+  background-image: url("/indices/img_reto6/images/image-gallery-sugarcubes.jpg");
+}
+
+.footer{
+  height: 35vh;
+  background-color: hsl(168, 37%, 45%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer div{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: 'Barlow', sans-serif;
+}
+.sunny{
+  font-weight: bold;
+  font-size: 30px;
+  color: #24544c;
+  letter-spacing: 1px;
+}
+.footer-span{ 
+  width: 300px;
+  color: #24544c;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.icons img{
+  padding: 10px;  
+}
+
+
