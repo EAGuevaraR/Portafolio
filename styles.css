@@ -30,7 +30,7 @@ body {
 }
 
 .banner {
-  background-image: url("/portafolio/frontend.jpg");
+  background-image: url("./portafolio/frontend.jpg");
   height: 80vh;
   display: flex;
   align-items: center;
