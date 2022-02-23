@@ -44,9 +44,6 @@ body {
   grid-template-rows: auto auto auto auto auto;
   text-align: center;
 }
-.item {
-  
-}
 .item button{
   background-color: hsl(30,25%,89%);
   border: none;

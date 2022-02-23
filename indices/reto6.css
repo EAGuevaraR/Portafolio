@@ -15,7 +15,7 @@ body{
   padding-left: 45px;
 }
 .header{
-  background-image: url("./indices/img_reto6/images/image-header.jpg");
+  background-image: url("./img_reto6/images/image-header.jpg");
   background-repeat: no-repeat;
   background-size: 70%;
   background-color: #40bfff !important;
@@ -74,12 +74,12 @@ body{
   grid-area: transform;
 }
 .item2{
-  background-image: url("./indices/img_reto6/images/image-transform.jpg");
+  background-image: url("./img_reto6/images/image-transform.jpg");
   grid-area: transform-image;
 ;
 }
 .item3{
-  background-image: url("./indices/img_reto6/images/image-stand-out.jpg");
+  background-image: url("./img_reto6/images/image-stand-out.jpg");
   grid-area: standout-image;
 
 }
@@ -119,12 +119,12 @@ body{
 }
 
 .item5{
-  background-image: url("./indices/img_reto6/images/image-graphic-design.jpg");
+  background-image: url("./img_reto6/images/image-graphic-design.jpg");
   grid-area: cherry;
 }
 
 .item6{
-  background-image: url("./indices/img_reto6/images/image-photography.jpg");
+  background-image: url("./img_reto6/images/image-photography.jpg");
   grid-area: oranges;
 }
 .text-container{
@@ -202,22 +202,22 @@ body{
 }
 .item8{
   grid-area: milk;
-  background-image: url("./indices/img_reto6/images/image-gallery-milkbottles.jpg");
+  background-image: url("./img_reto6/images/image-gallery-milkbottles.jpg");
 
 }
 .item9{
   grid-area: orange-plate;
-  background-image: url("./indices/img_reto6/images/image-gallery-orange.jpg");
+  background-image: url("./img_reto6/images/image-gallery-orange.jpg");
 
 }
 .item10{
   grid-area: ice;
-  background-image: url("./indices/img_reto6/images/image-gallery-cone.jpg");
+  background-image: url("./img_reto6/images/image-gallery-cone.jpg");
 
 }
 .item11{
   grid-area: build;
-  background-image: url("./indices/img_reto6/images/image-gallery-sugarcubes.jpg");
+  background-image: url("./img_reto6/images/image-gallery-sugarcubes.jpg");
 }
 
 .footer{
