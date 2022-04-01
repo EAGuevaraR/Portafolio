@@ -1,0 +1,22 @@
+.body {
+  background-color: rgb(21,29,48);
+}
+.finder{
+  color: white;
+}
+#prueba{
+  background-color: #1c253f;
+  color: white;
+  border-radius: 10px;
+}
+#repos{
+  background-color: #141b2a;
+  border-radius: 10px;
+}
+#reposData{
+  color: white;
+}
+#search{
+  background-color: #1c253f;
+  
+}

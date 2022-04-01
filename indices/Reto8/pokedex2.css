@@ -1,0 +1,13 @@
+body {
+  background-image: url("https://media.vandal.net/i/1200x630/10-2021/2021105724573_1.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+
+.text-title{
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: 'Chakra Petch', sans-serif;
+};
